@@ -107,11 +107,11 @@ Which URL do you navigate to in order to check that the ELK server is running?
 - http://52.229.102.65:5601/app/kibana
 
 The commands used to download, update and run the playbook.
-- curl https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > /etc/ansible/filebeat-config.yml
+- 'curl https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > /etc/ansible/filebeat-config.yml'
 
 The commands used to update files:
-- nano hosts
-- nano playbook_file.yml
+- 'nano hosts'
+- 'nano playbook_file.yml'
 
 The command used to run the playbook:
-- ansible-playbook playbook_file.yml
+- 'ansible-playbook playbook_file.yml'
