@@ -91,16 +91,16 @@ Metricbeat collects metrics and statistics form the operating system and various
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the filebeat-config.yml file to /etc/ansible/files/filebeat-config.yml.
-- Update the filebeat-config.yml file to include host 10.2.0.4:9200 with username "elastic" and password "changeme" and setup.kibana host to 10.2.0.4:5601. 
+- Copy the `filebeat-config.yml` file to `/etc/ansible/files/filebeat-config.yml`.
+- Update the `filebeat-config.yml` file to include host 10.2.0.4:9200 with username "elastic" and password "changeme" and setup.kibana host to 10.2.0.4:5601. 
 - Run the playbook, and navigate to http://[your.VM.IP]:5601/app/kibana and click on "Check Data" to check that the installation worked as expected.
 
 Which file is the playbook?  
-- filebeat-playbook.yml 
+- `filebeat-playbook.yml` 
 Where do you copy it? 
-- /etc/ansible/roles/filebeat-playbook.yml
+- `/etc/ansible/roles/filebeat-playbook.yml`
 Which file do you update to make Ansible run the playbook on a specific machine? 
-- /etc/ansible/hosts. 
+- `/etc/ansible/hosts`. 
 How do I specify which machine to install the ELK server on versus which to install Filebeat on? 
 - Adding the private ip address of Web-1 and Web-2 to the file host under [webservers] Additionally, adding the private ip address of the ElkVM under [elk]
 Which URL do you navigate to in order to check that the ELK server is running? 
