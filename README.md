@@ -78,6 +78,7 @@ The following screenshot displays the result of running `docker ps` after succes
 
 
 <img src="/Images/ELKDocker.png">
+- https://github.com/paulbarr77/ELK-Project/blob/main/Images/ELKDocker.png
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines: Web -1 (10.0.0.5) and Web - 2 (10.0.0.6)
