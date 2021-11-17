@@ -56,8 +56,8 @@ A summary of the access policies in place can be found in the table below.
 |      Name     | Publicly Accessible |                              Allowed IP Addresses                              |
 |:-------------:|:-------------------:|:------------------------------------------------------------------------------:|
 |    Jump-Box   |         Yes         |                     Workstation Public IP: 99.67.237.57:22                     |
-|     Web-1     |          No         |                         Load Balancer IP: 20.115.125.60                        |
-|     Web-2     |          No         |                         Load Balancer IP: 20.115.125.60                        |
+|     Web-1     |          No         |                         Jump-Box IP: 10.0.0.4                        |
+|     Web-2     |          No         |                         Jump-Box IP: 10.0.0.4                        |
 | Load Balancer |         Yes         |                     Workstation Public IP: 99.67.237.57:80                     |
 |      Elk      |         Yes         | Workstation Public IP: 99.67.237.57:5601 and Jump-Box Provisioner IP: 10.0.0.4:22 |
 
