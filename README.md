@@ -4,7 +4,7 @@ Rice University - Project - 1
 
 The files in this repository were used to configure the network depicted below.
 
-![TODO: Update the path with the name of your diagram](Images/diagram_filename.png)
+<img src="/Diagrams/Azure Lab_ Elk Project 1.drawio.png/">
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -56,8 +56,8 @@ A summary of the access policies in place can be found in the table below.
 |      Name     | Publicly Accessible |                              Allowed IP Addresses                              |
 |:-------------:|:-------------------:|:------------------------------------------------------------------------------:|
 |    Jump-Box   |         Yes         |                     Workstation Public IP: 99.67.237.57:22                     |
-|     Web-1     |          No         |                         Load Balancer IP: 20.115.125.60                        |
-|     Web-2     |          No         |                         Load Balancer IP: 20.115.125.60                        |
+|     Web-1     |          No         |                         Jump-Box IP: 10.0.0.4                        |
+|     Web-2     |          No         |                         Jump-Box IP: 10.0.0.4                        |
 | Load Balancer |         Yes         |                     Workstation Public IP: 99.67.237.57:80                     |
 |      Elk      |         Yes         | Workstation Public IP: 99.67.237.57:5601 and Jump-Box Provisioner IP: 10.0.0.4:22 |
 
