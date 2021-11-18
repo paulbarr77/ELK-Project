@@ -94,25 +94,29 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the `filebeat-config.yml` file to `/etc/ansible/files/filebeat-config.yml`.
 - Update the `filebeat-config.yml` file to include host 10.2.0.4:9200 with username "elastic" and password "changeme" and setup.kibana host to 10.2.0.4:5601. 
-- Run the playbook, and navigate to http://[your.VM.IP]:5601/app/kibana and click on "Check Data" to check that the installation worked as expected.
+- Run the playbook, and navigate to http://52.229.102.65:5601/app/kibana and click on "Check Data" to check that the installation worked as expected.
 
-Which file is the playbook?  
+<strong>Which file is the playbook?</strong>  
 - `filebeat-playbook.yml` 
-Where do you copy it? 
+
+<strong>Where do you copy it?</strong> 
 - `/etc/ansible/roles/filebeat-playbook.yml`
-Which file do you update to make Ansible run the playbook on a specific machine? 
-- `/etc/ansible/hosts`. 
-How do I specify which machine to install the ELK server on versus which to install Filebeat on? 
-- Adding the private ip address of Web-1 and Web-2 to the file host under [webservers] Additionally, adding the private ip address of the ElkVM under [elk]
-Which URL do you navigate to in order to check that the ELK server is running? 
+
+<strong>Which file do you update to make Ansible run the playbook on a specific machine?</strong> 
+- `/etc/ansible/hosts` 
+
+<strong>How do I specify which machine to install the ELK server on versus which to install Filebeat on?</strong> 
+- Adding the private ip address of Web-1 and Web-2 to the file host under [webservers] Additionally, adding the private ip address of the ElkVM under [elk].
+
+<strong>Which URL do you navigate to in order to check that the ELK server is running?</strong> 
 - http://52.229.102.65:5601/app/kibana
 
-The commands used to download, update and run the playbook.
+<strong>The commands used to download, update and run the playbook.</strong>
 - `curl https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > /etc/ansible/filebeat-config.yml`
 
-The commands used to update files:
+<strong>The commands used to update files:</strong>
 - `nano hosts`
 - `nano playbook_file.yml`
 
-The command used to run the playbook:
+<strong>The command used to run the playbook:</strong>
 - `ansible-playbook playbook_file.yml`
