@@ -68,7 +68,7 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 The playbook implements the following tasks:
 - Install docker.io: It will install docker.io, the docker engine that will be used for running the containers.  
-- Install python 3_pip: This will allow for additional docker modules and containers to be installed efficiantly. 
+- Install python 3_pip: This will allow for additional docker modules and containers to be installed efficiently. 
 - Increase memory/ Use more memory: The virtual memory will need to be increased to 262144 for Elk to operate effectivley.
 - Download and launch Elk container: The Elk docker will be downloaded and launched on boot
 
